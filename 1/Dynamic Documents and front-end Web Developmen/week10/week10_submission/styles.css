@@ -1,0 +1,182 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 1rem;
+}
+
+/* Layout 1: Holy Grail */
+.holy-grail-grid {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px 1fr 80px;
+    min-height: 80vh;
+    gap: 10px 10px;
+}
+
+.hg-header {
+    grid-area: header;
+    background: #ff6b6b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hg-nav {
+    grid-area: nav;
+    background: #4ecdc4;
+    padding: 20px;
+}
+
+.hg-main {
+    grid-area: main;
+    background: #ffffff;
+    padding: 20px;
+}
+
+.hg-aside {
+    grid-area: aside;
+    background: #ffe66d;
+    padding: 20px;
+}
+
+.hg-footer {
+    grid-area: footer;
+    background: #1a535c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .holy-grail-grid {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+/* Layout 2: Dashboard */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 200px 200px 100px;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dash-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.d-header {
+    grid-column: 1 / -1;
+    background: #6c5ce7;
+    color: white;
+}
+
+.d-sidebar {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    background: #a29bfe;
+}
+
+.d-content1 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.d-content2 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    background: #00cec9;
+}
+
+.d-content3 {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+}
+
+.d-footer {
+    grid-column: 1 / -1;
+    background: #2d3436;
+    color: white;
+}
+
+/* Layout 3: Masonry / Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 15px;
+    grid-auto-flow: dense;
+}
+
+.gallery-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item.wide {
+    grid-column: span 2;
+}
+
+.gallery-item.tall {
+    grid-row: span 2;
+}
+
+.gallery-item.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}

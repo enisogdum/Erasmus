@@ -1,0 +1,52 @@
+=== PART 1: Reproduce Article Example ===
+Alternative          | Efficiency Interval  | Mid-point  | Half-width | Rank
+---------------------------------------------------------------------------
+City 4               | [0.663, 0.811]      | 0.737      | 0.074      | 1
+City 6               | [0.601, 0.781]      | 0.691      | 0.090      | 2
+City 5               | [0.552, 0.628]      | 0.590      | 0.038      | 3
+City 2               | [0.452, 0.628]      | 0.540      | 0.088      | 4
+City 3               | [0.243, 0.320]      | 0.282      | 0.039      | 5
+City 1               | [0.211, 0.264]      | 0.237      | 0.027      | 6
+
+=== PART 2: Crisp Data into Intervals (Smartphone Data) ===
+--- Crisp TOPSIS ---
+Alternative          | Efficiency Interval  | Mid-point  | Half-width | Rank
+---------------------------------------------------------------------------
+OnePlus 12           | [0.727, 0.727]      | 0.727      | 0.000      | 1
+Asus Zenfone 10      | [0.698, 0.698]      | 0.698      | 0.000      | 2
+Nothing Phone (2)    | [0.689, 0.689]      | 0.689      | 0.000      | 3
+Motorola Edge 50 Pro | [0.678, 0.678]      | 0.678      | 0.000      | 4
+Xiaomi 14 Pro        | [0.616, 0.616]      | 0.616      | 0.000      | 5
+Honor Magic 6 Pro    | [0.546, 0.546]      | 0.546      | 0.000      | 6
+iPhone 15 Pro        | [0.498, 0.498]      | 0.498      | 0.000      | 7
+Google Pixel 8 Pro   | [0.408, 0.408]      | 0.408      | 0.000      | 8
+Samsung S24 Ultra    | [0.332, 0.332]      | 0.332      | 0.000      | 9
+Sony Xperia 1 V      | [0.233, 0.233]      | 0.233      | 0.000      | 10
+
+--- Interval TOPSIS (x_L = 0.95*x, x_U = 1.05*x) ---
+Alternative          | Efficiency Interval  | Mid-point  | Half-width | Rank
+---------------------------------------------------------------------------
+OnePlus 12           | [0.568, 0.883]      | 0.725      | 0.158      | 1
+Asus Zenfone 10      | [0.574, 0.795]      | 0.684      | 0.110      | 2
+Nothing Phone (2)    | [0.602, 0.753]      | 0.678      | 0.076      | 3
+Motorola Edge 50 Pro | [0.579, 0.755]      | 0.667      | 0.088      | 4
+Xiaomi 14 Pro        | [0.478, 0.792]      | 0.635      | 0.157      | 5
+Honor Magic 6 Pro    | [0.424, 0.731]      | 0.578      | 0.154      | 6
+iPhone 15 Pro        | [0.391, 0.668]      | 0.529      | 0.139      | 7
+Google Pixel 8 Pro   | [0.324, 0.565]      | 0.445      | 0.120      | 8
+Samsung S24 Ultra    | [0.274, 0.447]      | 0.360      | 0.086      | 9
+Sony Xperia 1 V      | [0.174, 0.404]      | 0.289      | 0.115      | 10
+
+=== PART 3: Expert-based Intervals ===
+Alternative          | Efficiency Interval  | Mid-point  | Half-width | Rank
+---------------------------------------------------------------------------
+OnePlus 12           | [0.493, 0.956]      | 0.725      | 0.231      | 1
+Asus Zenfone 10      | [0.506, 0.883]      | 0.695      | 0.189      | 2
+Nothing Phone (2)    | [0.540, 0.828]      | 0.684      | 0.144      | 3
+Motorola Edge 50 Pro | [0.516, 0.833]      | 0.674      | 0.158      | 4
+Xiaomi 14 Pro        | [0.417, 0.847]      | 0.632      | 0.215      | 5
+Honor Magic 6 Pro    | [0.377, 0.754]      | 0.566      | 0.189      | 6
+iPhone 15 Pro        | [0.344, 0.712]      | 0.528      | 0.184      | 7
+Google Pixel 8 Pro   | [0.293, 0.579]      | 0.436      | 0.143      | 8
+Samsung S24 Ultra    | [0.249, 0.452]      | 0.351      | 0.102      | 9
+Sony Xperia 1 V      | [0.160, 0.408]      | 0.284      | 0.124      | 10

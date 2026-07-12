@@ -1,0 +1,464 @@
+Please remember about required elements:
+headline (6–10 words);
+subheadline (8–15 words);
+hero image;
+intro (1–3 sentences);
+key details: what, when (dates/times), who benefits, where to shop, how to participate;
+3–6 featured products/offers (short blurb + price or discount);
+distinctive CTA (Call-To-Action) button/text;
+1–2 social-proof lines (testimonial or rating);
+footer information including: webshop URL, contact email/phone, social handles, unsubscribe note.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnisStore Winter Sale Extravaganza</title>
+    <style>
+        /* Reset styles for email compatibility */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        img {
+            border: 0;
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Main container */
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hero section */
+        .hero {
+            position: relative;
+            background-image: url('hero-background.png');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            margin: 0 0 15px 0;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+        }
+
+        .hero p {
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.5;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            color: #f0f0f0;
+        }
+
+        /* Content section */
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 26px;
+            color: #2c3e50;
+            margin: 0 0 30px 0;
+            font-weight: bold;
+        }
+
+        /* Products grid */
+        .products-grid {
+            display: table;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .product-row {
+            display: table-row;
+        }
+
+        .product-item {
+            display: table-cell;
+            width: 50%;
+            padding: 15px;
+            vertical-align: top;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .discount-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: #ffffff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(231, 76, 60, 0.4);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #34495e;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #95a5a6;
+            font-size: 14px;
+            margin-right: 8px;
+        }
+
+        .sale-price {
+            color: #e74c3c;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .rating {
+            color: #f39c12;
+            font-size: 14px;
+            margin: 8px 0;
+        }
+
+        /* CTA Button */
+        .cta-section {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: #ffffff;
+            padding: 16px 50px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #c0392b, #a93226);
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* Social Proof Section */
+        .social-proof {
+            background: #ecf0f1;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .social-proof h3 {
+            text-align: center;
+            color: #2c3e50;
+            margin: 0 0 20px 0;
+            font-size: 22px;
+        }
+
+        .testimonial {
+            background: #ffffff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #555;
+            margin: 0 0 10px 0;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            color: #7f8c8d;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .testimonial-rating {
+            color: #f39c12;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #34495e;
+            color: #ecf0f1;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .social-links {
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 15px;
+            background: #2c3e50;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #1a252f;
+        }
+
+        /* Responsive */
+        @media only screen and (max-width: 600px) {
+            .hero h1 {
+                font-size: 24px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .product-item {
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+
+            .cta-button {
+                padding: 14px 40px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-overlay">
+                <h1>❄️ Winter Sale Extravaganza: Up to 50% Off! ❄️</h1>
+                <p>Grab your favorite gadgets and accessories before the season ends!</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h2 class="section-title">🎁 Featured Winter Deals 🎁</h2>
+
+            <!-- Products Grid -->
+            <table class="products-grid" cellpadding="0" cellspacing="0">
+                <!-- Row 1 -->
+                <tr class="product-row">
+                    <td class="product-item">
+                        <div class="product-card">
+                            <span class="discount-badge">-50%</span>
+                            <img src="product1-headphones.png" alt="Premium Wireless Headphones" class="product-image">
+                            <div class="product-name">Premium Wireless Headphones</div>
+                            <div class="rating">⭐⭐⭐⭐⭐ (4.8/5)</div>
+                            <div class="product-price">
+                                <span class="original-price">$199.99</span>
+                                <span class="sale-price">$99.99</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="product-item">
+                        <div class="product-card">
+                            <span class="discount-badge">-40%</span>
+                            <img src="product2-smartwatch.png" alt="Smart Fitness Watch" class="product-image">
+                            <div class="product-name">Smart Fitness Watch</div>
+                            <div class="rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+                            <div class="product-price">
+                                <span class="original-price">$299.99</span>
+                                <span class="sale-price">$179.99</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Row 2 -->
+                <tr class="product-row">
+                    <td class="product-item">
+                        <div class="product-card">
+                            <span class="discount-badge">-35%</span>
+                            <img src="product3-phonecase.png" alt="Winter Edition Phone Case" class="product-image">
+                            <div class="product-name">Winter Edition Phone Case</div>
+                            <div class="rating">⭐⭐⭐⭐☆ (4.6/5)</div>
+                            <div class="product-price">
+                                <span class="original-price">$39.99</span>
+                                <span class="sale-price">$25.99</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="product-item">
+                        <div class="product-card">
+                            <span class="discount-badge">-45%</span>
+                            <img src="product4-earbuds.png" alt="True Wireless Earbuds" class="product-image">
+                            <div class="product-name">True Wireless Earbuds</div>
+                            <div class="rating">⭐⭐⭐⭐⭐ (4.7/5)</div>
+                            <div class="product-price">
+                                <span class="original-price">$149.99</span>
+                                <span class="sale-price">$82.49</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Row 3 -->
+                <tr class="product-row">
+                    <td class="product-item">
+                        <div class="product-card">
+                            <span class="discount-badge">-30%</span>
+                            <img src="product5-powerbank.png" alt="Portable Power Bank" class="product-image">
+                            <div class="product-name">Portable Power Bank 20000mAh</div>
+                            <div class="rating">⭐⭐⭐⭐⭐ (4.8/5)</div>
+                            <div class="product-price">
+                                <span class="original-price">$79.99</span>
+                                <span class="sale-price">$55.99</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="product-item">
+                        <div class="product-card"
+                            style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: none;">
+                            <div style="padding: 40px 10px;">
+                                <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">+100 More</div>
+                                <div style="font-size: 16px;">Amazing Deals Waiting!</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <a href="#" class="cta-button">🛒 Shop Now</a>
+            </div>
+
+            <!-- Social Proof Section -->
+            <div class="social-proof">
+                <h3>💬 What Our Customers Say</h3>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">"Amazing quality and fast shipping! The wireless headphones are
+                        incredible. Best purchase this winter!"</p>
+                    <p class="testimonial-author">- Sarah M.</p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">"Great deals and excellent customer service. The smartwatch exceeded my
+                        expectations!"</p>
+                    <p class="testimonial-author">- James T.</p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">"Love the winter sale! Got all my tech accessories at unbeatable prices.
+                        Highly recommend EnisStore!"</p>
+                    <p class="testimonial-author">- Emily R.</p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>EnisStore</strong> - Your Trusted Tech Partner</p>
+            <p>📧 support@enisstore.com | 📞 +1 (555) 123-4567</p>
+
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+
+            <p style="font-size: 12px; color: #95a5a6; margin-top: 20px;">
+                You're receiving this email because you subscribed to EnisStore newsletter.<br>
+                <a href="#" style="color: #3498db;">Unsubscribe</a> | <a href="#" style="color: #3498db;">View in
+                    browser</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

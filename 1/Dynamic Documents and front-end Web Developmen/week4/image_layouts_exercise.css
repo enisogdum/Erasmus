@@ -1,0 +1,70 @@
+/* ==================== Basic Styling for "Images" ==================== */
+.img {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 100px; /* vertically centers the number */
+  margin: 5px;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+/* Special "A" image */
+.special {
+  width: 110px;
+  height: 110px;
+  background-color: orange;
+  line-height: 110px;
+  font-weight: bold;
+}
+
+/* ==================== Container Styling ==================== */
+.container {
+  overflow: auto; /* clears floats */
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 1px dashed gray;
+  display: inline-block; /* allow side-by-side in layout-pair */
+  vertical-align: top;
+}
+
+/* ==================== Layout Pair (Original + Modified) ==================== */
+.layout-pair {
+  display: flex;
+  gap: 30px; /* space between original and modified */
+  margin-bottom: 40px;
+}
+
+/* ==================== Specific Layouts ==================== */
+
+/* 1. Grid (3x3) */
+.container.grid {
+  width: 330px; /* 3 images x 100px + 2x5px margin = 330px total */
+}
+.container.grid .img {
+  float: left; /* float needed for grid wrapping */
+}
+
+/* 2. Horizontal (all in line using flex) */
+.container.horizontal {
+  display: flex;
+  gap: 10px; /* spacing between images */
+  flex-wrap: nowrap; /* prevent wrapping to next line */
+}
+
+/* remove float for horizontal */
+.container.horizontal .img {
+  float: none;
+}
+
+/* 3. Vertical (stacked column) */
+.container.vertical {
+  display: block;
+}
+.container.vertical .img {
+  float: none;
+  display: block;
+}

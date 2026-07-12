@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "com.example.courses.app-debug-47:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.courses.app-main-49:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_film.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/film.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.courses.app-main-49:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.courses.app-main-49:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.courses.app-main-49:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_music.jpeg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/music.jpeg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/xml_backup_rules.xml.flat",
+        "source": "com.example.courses.app-main-49:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_biology.jpeg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/biology.jpeg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_automotive.jpeg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/automotive.jpeg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_crafts.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/crafts.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.courses.app-main-49:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_geology.jpeg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/geology.jpeg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_drawing.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/drawing.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_journalism.jpeg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/journalism.jpeg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_business.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/business.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_lifestyle.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/lifestyle.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.courses.app-main-49:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_ecology.jpeg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/ecology.jpeg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.courses.app-main-49:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.courses.app-main-49:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_design.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/design.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.courses.app-main-49:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_culinary.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/culinary.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.courses.app-main-49:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_history.jpeg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/history.jpeg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.courses.app-main-49:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_finance.jpeg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/finance.jpeg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.courses.app-main-49:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_law.jpeg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/law.jpeg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_gaming.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/gaming.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.courses.app-main-49:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_engineering.jpeg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/engineering.jpeg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_painting.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/painting.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_tech.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/tech.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_fashion.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/fashion.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_physics.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/physics.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.courses.app-main-49:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.courses.app-main-49:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_ic_grain.xml.flat",
+        "source": "com.example.courses.app-main-49:/drawable/ic_grain.xml"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_photography.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/photography.jpg"
+    },
+    {
+        "merged": "com.example.courses.app-debug-47:/drawable_architecture.jpg.flat",
+        "source": "com.example.courses.app-main-49:/drawable/architecture.jpg"
+    }
+]

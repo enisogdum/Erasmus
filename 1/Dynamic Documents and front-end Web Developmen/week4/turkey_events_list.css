@@ -1,0 +1,32 @@
+/* styles.css */
+
+/* General style for all lists */
+ul {
+    font-family: Arial, sans-serif;
+    color: darkblue;      /* base color */
+    font-size: 16px;      /* base font size */
+    margin-left: 20px;
+}
+
+/* Level 1 items */
+ul > li {
+    color: darkred;       /* override color for first-level items */
+    font-weight: bold;    /* bold text */
+}
+
+/* Level 2 items */
+ul > li > ul > li {
+    color: darkgreen;     /* override color for second-level items */
+    font-style: italic;   /* italic text */
+}
+
+/* Level 3 items */
+ul > li > ul > li > ul > li {
+    color: darkorange;    /* override color for third-level items */
+    text-decoration: underline; /* underline text */
+}
+
+/* Optional: Hover effect */
+li:hover {
+    background-color: #f0f0f0;
+}

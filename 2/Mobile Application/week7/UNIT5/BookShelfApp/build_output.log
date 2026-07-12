@@ -1,0 +1,45 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:processDebugNavigationResources
+> Task :app:javaPreCompileDebug
+> Task :app:mapDebugSourceSetPaths
+> Task :app:parseDebugLocalResources
+> Task :app:compileDebugNavigationResources
+> Task :app:generateDebugRFile
+> Task :app:checkDebugAarMetadata
+> Task :app:mergeDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:processDebugManifestForPackage
+> Task :app:processDebugResources
+
+> Task :app:compileDebugKotlin
+w: file:///Users/enisogdum/AndroidStudioProjects/BookShelfApp/app/src/main/java/com/example/bookshelfapp/ui/theme/Theme.kt:61:20 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///Users/enisogdum/AndroidStudioProjects/BookShelfApp/app/src/main/java/com/example/bookshelfapp/ui/theme/Theme.kt:62:20 'var navigationBarColor: Int' is deprecated. Deprecated in Java.
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Could not resolve all files for configuration ':app:androidJdkImage'.
+   > Failed to transform core-for-system-modules.jar to match attributes {artifactType=_internal_android_jdk_image, org.gradle.libraryelements=jar, org.gradle.usage=java-runtime}.
+      > Execution failed for JdkImageTransform: /Users/enisogdum/Library/Android/sdk/platforms/android-36.1/core-for-system-modules.jar.
+         > jlink executable /Users/enisogdum/.antigravity-ide/extensions/redhat.java-1.54.0-darwin-arm64/jre/21.0.10-macosx-aarch64/bin/jlink does not exist.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 9s
+20 actionable tasks: 20 executed

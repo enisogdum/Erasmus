@@ -1,0 +1,21 @@
+Country Code,State Code,ZIP/Postcode,City,Rate %,Tax Name,Priority,Compound,Shipping,Tax Class
+PL,*,*,*,23.0000,VAT,1,1,1,
+PL,*,*,*,8.0000,VAT Reduced,1,1,1,reduced-rate
+PL,*,*,*,0.0000,VAT Zero,1,1,1,zero-rate
+
+DE,*,*,*,19.0000,VAT,1,1,1,
+DE,*,*,*,7.0000,VAT Reduced,1,1,1,reduced-rate
+DE,*,*,*,0.0000,VAT Zero,1,1,1,zero-rate
+
+FR,*,*,*,20.0000,VAT,1,1,1,
+FR,*,*,*,10.0000,VAT Reduced,1,1,1,reduced-rate
+FR,*,*,*,0.0000,VAT Zero,1,1,1,zero-rate
+
+GB,*,*,*,20.0000,VAT,1,1,1,
+GB,*,*,*,5.0000,VAT Reduced,1,1,1,reduced-rate
+GB,*,*,*,0.0000,VAT Zero,1,1,1,zero-rate
+
+US,*,*,*,0.0000,Sales Tax,1,1,1,
+US,AL,*,*,4.0000,AL Sales Tax,1,1,1,
+US,CA,*,*,7.2500,CA Sales Tax,1,1,1,
+US,NY,*,*,4.0000,NY Sales Tax,1,1,1,

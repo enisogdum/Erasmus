@@ -1,0 +1,59 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Paragraph links */
+p a {
+    color: darkred;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+/* Heading */
+h1 {
+    color: darkgreen;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Table styles */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+/* Table header */
+th {
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-size: 1.5em;
+    color: navy;
+    text-transform: uppercase;
+}
+
+/* Table cells */
+td {
+    padding: 8px;
+}
+
+/* Specific visual styles */
+.location { color: darkred; font-weight: bold; }
+.position { color: darkorange; font-weight: bold; }
+.population { color: darkblue; font-weight: bold; }
+.description { color: darkgreen; font-weight: bold; }
+.link-cell a { color: purple; font-weight: bold; text-decoration: none; }
+
+.italic { font-style: italic; }
+.mono-font { font-family: 'Courier New', Courier, monospace; }
+.big-font { font-size: 1.1em; }
+
+/* Backgrounds for images row */
+.image-row { text-align: center; padding: 15px; background-color: #e0f7fa; }
+
+/* Image styles */
+.image-row img:first-child { border: 2px solid #333; width: 45%; height: auto; margin: 5px; }
+.image-row img:last-child { border-radius: 10px; width: 45%; height: auto; margin: 5px; }
